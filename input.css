@@ -20,17 +20,6 @@
   cursor: pointer;
   color: blueviolet; }
 
-ul#menu-main-menu {
-  @apply flex flex-row justify-center; }
-  ul#menu-main-menu li {
-    @apply inline px-2; }
-
-.has_mega_menu ul {
-  @apply grid border-2 border-red-500; }
-
-li.is_separate_column ul {
-  @apply flex flex-col; }
-
 .gridscount-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr)); }
 
@@ -42,3 +31,60 @@ li.is_separate_column ul {
 
 .gridscount-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+
+/* mega menu code start */
+
+.main-menu{
+  @apply flex gap-4;
+}
+
+.main-menu-item{
+  @apply hidden md:block;
+}
+
+.mega-menu{
+  @apply absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[90%]  bg-white  rounded shadow-md  transition-all duration-300 ease-in-out
+}
+
+.mega-menu-columns{
+  @apply grid gridscount-4 gap-4 p-4
+}
+
+.mega-menu-columns li span{
+  @apply text-sm font-semibold  text-black 
+}
+
+.mega-menu-col-1 ul{
+  @apply flex flex-col gap-2 mt-4 mylists
+}
+
+.mega-menu-col-1 ul li{
+  @apply text-gray-800  block mb-1
+}
+
+.mega-menu-col-2-items li{
+  @apply bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4
+}
+
+.mega-menu-col-3{
+  @apply flex flex-col gap-4
+}
+
+.mega-menu-col-3-items li{
+  @apply flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow
+}
+
+.mega-menu-col-3 button{
+  @apply bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 w-full
+}
+
+.mega-menu-col-4-items{
+  @apply flex flex-col mt-4
+}
+
+.mega-menu-col-4-items li{
+  @apply flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2
+}
+/* mega menu code end */
+
