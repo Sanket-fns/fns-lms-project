@@ -17,8 +17,8 @@
             <h1 class="text-2xl font-bold text-black border-t-2 border-b-2 border-black">LANDMARK</h1>
         </div>
         <!-- Center nav items -->
-        <ul class="flex gap-4">
-            <li class="hidden md:block" data-dropdown>
+        <ul class="main-menu">
+            <li class="main-menu-item" data-dropdown>
                 <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit"
                     data-dropdown-button>
                     <span>Megamenu</span>
@@ -28,27 +28,26 @@
                     </svg>
                 </button>
                 <!-- invisible opacity-0 -->
-                <div class="absolute left-0 right-0 mx-auto mt-4 col-span-6  w-[90%]  bg-white  rounded shadow-md     transition-all duration-300 ease-in-out"
-                    data-dropdown-menu>
-                    <ul class="grid gridscount-4 gap-4 p-4">
+                <div class="mega-menu" data-dropdown-menu>
+                    <ul class="mega-menu-columns">
                         <!-- Column 1: Hoverable Links -->
-                        <li>
-                            <span class="text-sm font-semibold  text-black  links">Useful links</span>
-                            <ul class="flex flex-col gap-2 mt-4 mylists">
-                                <li href="#" class="text-gray-800  block mb-1">Market research</li>
-                                <li href="#" class="text-gray-800  block mb-1">Advertising</li>
-                                <li href="#" class="text-gray-800  block mb-1">Consumer behaviour</li>
-                                <li href="#" class="text-gray-800  block mb-1">Digital marketing</li>
-                                <li href="#" class="text-gray-800  block mb-1">Marketing ethics</li>
-                                <li href="#" class="text-gray-800  block mb-1">Social media marketing</li>
+                        <li class="mega-menu-col-1">
+                            <span class="">Useful links</span>
+                            <ul class="">
+                                <li href="#" class="">Market research</li>
+                                <li href="#" class="">Advertising</li>
+                                <li href="#" class="">Consumer behaviour</li>
+                                <li href="#" class="">Digital marketing</li>
+                                <li href="#" class="">Marketing ethics</li>
+                                <li href="#" class="">Social media marketing</li>
                             </ul>
                         </li>
 
                         <!-- Column 2: Cards with Image and Text -->
-                        <li>
-                            <span class="text-sm font-semibold  text-black">Company</span>
-                            <ul class="mt-4">
-                                <li class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                        <li class="mega-menu-col-2">
+                            <span class="">Company</span>
+                            <ul class="mega-menu-col-2-items mt-4">
+                                <li class="">
                                     <div>
                                         <i class="bi bi-boxes"></i>
                                     </div>
@@ -58,7 +57,7 @@
 
                                     </div>
                                 </li>
-                                <li class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                <li class="">
                                     <div>
                                         <i class="bi bi-rocket"></i>
                                     </div>
@@ -68,7 +67,7 @@
 
                                     </div>
                                 </li>
-                                <li class="bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4">
+                                <li class="">
                                     <div>
                                         <i class="bi bi-emoji-smile"></i>
                                     </div>
@@ -83,11 +82,10 @@
                         </li>
 
                         <!-- Column 3: Hoverable Links and Button -->
-                        <li class="flex flex-col gap-4">
-                            <span class="text-sm font-semibold  links">Integration</span>
-                            <ul>
-                                <li>
-                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                        <li class="mega-menu-col-3">
+                            <span class="">Integration</span>
+                            <ul class="mega-menu-col-3-items">
+                                <li class="">
                                         <div>
                                             <i class="bi bi-slack"></i>
                                             <h1 class="text-black ml-4 text-base inline-block">Slack</h1>
@@ -95,10 +93,8 @@
                                         <div class="myarrow">
                                             <i class="bi bi-arrow-right"></i>
                                         </div>
-                                    </div>
                                 </li>
-                                <li>
-                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                <li class="">                                    
                                         <div>
                                             <i class="bi bi-browser-edge"></i>
                                             <h1 class="text-black ml-4 text-base inline-block">Webflow</h1>
@@ -106,10 +102,8 @@
                                         <div class="myarrow">
                                             <i class="bi bi-arrow-right"></i>
                                         </div>
-                                    </div>
                                 </li>
-                                <li>
-                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                <li class="">                                  
                                         <div>
                                             <i class="bi bi-envelope"></i>
                                             <h1 class="text-black ml-4 text-base inline-block">Mail chimp</h1>
@@ -117,10 +111,8 @@
                                         <div class="myarrow">
                                             <i class="bi bi-arrow-right"></i>
                                         </div>
-                                    </div>
                                 </li>
-                                <li>
-                                    <div class="flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow">
+                                <li class="">                                    
                                         <div>
                                             <i class="bi bi-reddit"></i>
                                             <h1 class="text-black ml-4 text-base inline-block">Reddit</h1>
@@ -128,32 +120,26 @@
                                         <div class="myarrow">
                                             <i class="bi bi-arrow-right"></i>
                                         </div>
-                                    </div>
                                 </li>
                             </ul>
                             <button
-                                class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 w-full">Button</button>
+                                class="">Button</button>
                         </li>
 
                         <!-- Column 4: Cards with Image and Text -->
-                        <li>
-                            <div>
-                                <span class="text-black text-sm font-semibold">Recent blogs</span>
-                            </div>
-                            <ul class="flex flex-col mt-4">
-                                <li>
-                                    <div class="flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2">
+                        <li class="mega-menu-col-4">
+                            <span class="">Recent blogs</span>
+                            <ul class="mega-menu-col-4-items">
+                                <li class="">                                   
                                         <div>
                                             <i class="bi bi-image-fill text-4xl"></i>
                                         </div>
                                         <div>
                                             <p class="text-black hover:text-green-950 text-sm font-semibold">10 things
                                                 to know about Mizzle</p>
-                                        </div>
-                                    </div>
+                                        </div>                                    
                                 </li>
-                                <li>
-                                    <div class="flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2">
+                                <li class="">                                    
                                         <div>
                                             <i class="bi bi-image-fill text-4xl"></i>
                                         </div>
@@ -161,10 +147,8 @@
                                             <p class="text-black hover:text-green-950 text-sm font-semibold">Power of
                                                 Gratitude</p>
                                         </div>
-                                    </div>
                                 </li>
-                                <li>
-                                    <div class="flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2">
+                                <li class="">                                    
                                         <div>
                                             <i class="bi bi-image-fill text-4xl"></i>
                                         </div>
@@ -172,14 +156,13 @@
                                             <p class="text-black hover:text-green-950 text-sm font-semibold">Effortless
                                                 web</p>
                                         </div>
-                                    </div>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="hidden md:block" data-dropdown>
+            <li class="main-menu-item" data-dropdown>
                 <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit"
                     data-dropdown-button>
                     <span>Portfolio</span>
@@ -189,7 +172,7 @@
                     </svg>
                 </button>
             </li>
-            <li class="hidden md:block" data-dropdown>
+            <li class="main-menu-item" data-dropdown>
                 <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit"
                     data-dropdown-button>
                     <span>Demos</span>
@@ -199,7 +182,7 @@
                     </svg>
                 </button>
             </li>
-            <li class="hidden md:block" data-dropdown>
+            <li class="main-menu-item" data-dropdown>
                 <button class="text-black text-md inline-flex items-center hover:text-green-900 font-inherit"
                     data-dropdown-button>
                     <span>Pages</span>
