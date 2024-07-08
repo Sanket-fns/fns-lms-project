@@ -73,3 +73,58 @@
   @apply flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2; }
 
 /* mega menu code end */
+
+/* mega menu mobile code start */
+
+.mobile-main-menu{
+  @apply flex flex-col
+}
+
+.mobile-main-menu-item{
+  @apply w-full border-t-2 py-4 border-gray-300
+}
+
+.mobile-mega-menu{
+  @apply  border-2 border-gray-400 rounded-md
+}
+
+.mobile-mega-menu-columns{
+  @apply grid grid-cols-1 gap-4 p-4
+}
+
+.mobile-mega-menu-columns li span{
+  @apply text-sm font-semibold  text-black
+}
+
+.mobile-mega-menu-columns li ul{
+  @apply flex flex-col gap-2 mylists
+}
+
+.mobile-mega-menu-col-1 ul li{
+  @apply text-gray-800  block mb-1
+}
+
+.mobile-mega-menu-col-2-items li{
+  @apply bg-gray-50 p-4 rounded-md hover:bg-gray-100 flex gap-4 mb-4
+}
+
+.mobile-mega-menu-col-3{
+  @apply flex flex-col
+}
+
+.mobile-mega-menu-col-3-items li{
+  @apply flex font-semibold justify-between mb-4 hover:bg-gray-100 p-2 arrow
+}
+
+.mobile-mega-menu-col-3 button{
+  @apply bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 w-full
+}
+
+.mobile-mega-menu-col-4-items{
+  @apply flex flex-col
+}
+
+.mobile-mega-menu-col-4-items li{
+  @apply flex gap-2 hover:text-green-800 hover:bg-gray-100 p-2
+}
+/* mega menu mobile code end */
